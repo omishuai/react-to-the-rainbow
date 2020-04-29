@@ -1,0 +1,20 @@
+React.Component
+
+to have an initial state, use a constructor in a component,
+and call super(props)
+
+in order to access class object such as 
+"this.state" and "this.props",
+arrow function has already binded "ths" component so it does not need
+to do bind(this), but for non-arrow method, need to do bind() to access props and state
+
+it looks like props keeps the state of the parent, and in the current 
+component, use "state" to store data that belongs to the current component.
+if there is shared data across children, then parent can include the shared data in props,
+then pass down to the children.
+
+constructor looks like is being used to track the state of current component,
+since in current case, square is only to render, and the value comes from
+parent board component, so the constructor is not needed in square
+
+
